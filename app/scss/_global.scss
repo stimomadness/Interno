@@ -1,0 +1,24 @@
+body {
+  font-family: 'Jost', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 400;
+  color: $default;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 65px;
+  font-family: 'DM Serif Display';
+  color: $title;
+}

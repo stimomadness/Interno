@@ -4,6 +4,352 @@
 @import 'global';
 
 
+.header {
+  &__top {
+    margin: 25px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 19px;
+    line-height: 30px;
+    color: $title;
+    transition: .2s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__inner {
+    background: url('../images/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 0px 290px;
+    min-height: 100vh;
+  }
+
+  &__box {
+    width: 600px;
+    margin-bottom: 260px;
+  }
+
+  &__title {
+    padding-top: 188px;
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  &__subtitle {
+    margin: 20px 0 50px 0;
+  }
+
+  &__btn {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 22px 67px 22px 34px;
+    color: #fff;
+    background: #292F36;
+    border-radius: 18px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url('../images/icons/angle-right-big.svg');
+      width: 27px;
+      height: 36px;
+      right: 20px;
+    }
+  }
+}
+
+.about {
+  margin-bottom: 50px;
+
+  &__top {
+    margin-top: 175px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+  }
+
+  &__item {
+    &:last-child {
+      margin-top: 50px;
+    }
+  }
+
+  &__title {
+    font-family: 'DM Serif Display';
+    font-size: 25px;
+    line-height: 39px;
+  }
+
+  &__text {
+    margin-top: 17px;
+  }
+
+  &__link {
+    margin-top: 70px;
+    transition: .2s;
+    position: relative;
+    padding-right: 30px;
+    color: $default;
+
+    &:hover {
+      color: $accent;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 10px;
+      background: url('../images/icons/angle-right.svg');
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 17px;
+    }
+  }
+
+  &__inner {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    margin-top: 40px;
+
+    .about__title {
+      font-size: 50px;
+      line-height: 65px;
+    }
+
+    .about__text {
+      width: 500px;
+    }
+
+    .about__link {
+      font-size: 24px;
+      line-height: 36px;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        background: url('../images/icons/phone.svg');
+        background-repeat: no-repeat;
+        width: 33px;
+        height: 33px;
+        top: 16px;
+        left: -78px;
+      }
+    }
+  }
+
+  &__phone {
+    margin-top: 45px;
+    padding-left: 113px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #F4F0EC;
+      width: 93px;
+      height: 93px;
+      border-radius: 50%;
+      top: -10px;
+      left: 0px;
+    }
+  }
+
+  &__phone-text {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 70px;
+  }
+
+  &__btn {
+
+    font-size: 18px;
+    line-height: 27px;
+    padding: 22px 67px 22px 34px;
+    color: #fff;
+    background: #292F36;
+    border-radius: 18px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url('../images/icons/angle-right-big.svg');
+      width: 27px;
+      height: 36px;
+      right: 20px;
+    }
+  }
+
+  &__img {
+    border-radius: 0px 326px 0px 123px;
+
+  }
+}
+
+.reviews {
+  background: #F4F0EC;
+  border-radius: 70px;
+  text-align: center;
+
+  &__title {}
+
+  &__items-box {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  &__items {
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 354px;
+  }
+
+  &__item {}
+
+  &__item-box {}
+
+  &__img {}
+
+  &__box {}
+
+  &__name {}
+
+  &__region {}
+
+  &__text {}
+}
+
+.partners {
+  &__inner {}
+
+  &__link {}
+
+  &__img {}
+}
+
+.projects {
+  &__top {}
+
+  &__title {}
+
+  &__subtitle {}
+
+  &__inner {}
+
+  &__items {}
+
+  &__item {}
+
+  &__img {}
+
+  &__box {}
+
+  &__box-min {}
+
+  &__link {}
+
+  &__img-link {}
+}
+
+.num {
+  &__list {}
+
+  &__item {}
+
+  &__big {}
+
+  &__text {}
+}
+
+.blog {
+  &__top {}
+
+  &__title {}
+
+  &__subtitle {}
+
+  &__inner {}
+
+  &__items {}
+
+  &__item {}
+
+  &__img {}
+
+  &__box {}
+
+  &__date {}
+
+  &__link {}
+}
+
+.join {
+  &__title {}
+
+  &__subtitle {}
+
+  &__link {}
+}
+
+.footer {
+  &__top {}
+
+  &__items {}
+
+  &__list {}
+
+  &__item {}
+
+  &__text {}
+
+  &__social {}
+
+  &__social-img {}
+
+  &__link {}
+
+  &__bottom {}
+}
+
+
 
 
 @import 'media';
